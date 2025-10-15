@@ -99,10 +99,10 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="neon-text">Get In Touch</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto px-4">
               Have a project in mind or just want to say hello? I\u2019d love to hear from you!            </p>
           </motion.div>
 
@@ -112,9 +112,9 @@ export default function Contact() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="glass-effect p-8 rounded-lg"
+              className="glass-effect p-6 sm:p-8 rounded-lg"
             >
-              <h2 className="text-3xl font-bold mb-6 neon-text">Send Me a Message</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 neon-text">Send Me a Message</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -242,8 +242,8 @@ export default function Contact() {
               className="space-y-8"
             >
               {/* Contact Details */}
-              <div className="glass-effect p-8 rounded-lg">
-                <h2 className="text-3xl font-bold mb-6 neon-text">Contact Information</h2>
+              <div className="glass-effect p-6 sm:p-8 rounded-lg">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 neon-text">Contact Information</h2>
                 <div className="space-y-6">
                   {contactInfo.map((info) => (
                     <motion.a
@@ -272,8 +272,8 @@ export default function Contact() {
               </div>
 
               {/* Social Links */}
-              <div className="glass-effect p-8 rounded-lg">
-                <h2 className="text-3xl font-bold mb-6 neon-text">Follow Me</h2>
+              <div className="glass-effect p-6 sm:p-8 rounded-lg">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 neon-text">Follow Me</h2>
                 <div className="flex gap-6">
                   {socialLinks.map((social) => (
                     <motion.a

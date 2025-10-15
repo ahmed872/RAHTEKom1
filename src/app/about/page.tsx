@@ -92,10 +92,10 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="neon-text">About Me</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto px-4">
               Passionate about creating stunning web experiences that push the boundaries of what\u2019s possible            </p>
           </motion.div>
 
@@ -107,8 +107,8 @@ export default function About() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 neon-text">My Story</h2>
-              <div className="space-y-4 text-gray-300 text-lg">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 neon-text">My Story</h2>
+              <div className="space-y-5 text-gray-300 text-base sm:text-lg leading-relaxed">
                 <p>
                  I\u2019m Rahat Ekom, a creative web developer and designer dedicated to crafting exceptional digital experiences. 
                   My journey in web development combines technical expertise with artistic vision to create websites and 
