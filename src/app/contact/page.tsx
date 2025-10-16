@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,7 +12,7 @@ export default function Contact() {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle'); // 'error' is used in the catch block, so it's fine.
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -25,19 +26,26 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Create mailto link with form data
-      const mailtoLink = `mailto:rahatekom12@gmail.com?subject=${encodeURIComponent(
-        formData.subject
-      )}&body=${encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      )}`;
+      // EmailJS configuration
+      // You need to replace these with your actual EmailJS credentials
+      const serviceID = 'YOUR_SERVICE_ID'; // Get from EmailJS dashboard
+      const templateID = 'YOUR_TEMPLATE_ID'; // Get from EmailJS dashboard
+      const publicKey = 'YOUR_PUBLIC_KEY'; // Get from EmailJS dashboard
 
-      // Open email client
-      window.location.href = mailtoLink;
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'rahatekom12@gmail.com',
+      };
+
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch {
+    } catch (error) {
+      console.error('EmailJS Error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

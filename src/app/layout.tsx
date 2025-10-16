@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "../components/layout/Navigation";
 import Footer from "../components/layout/Footer";
 import ParticlesBackground from "../components/ui/ParticlesBackground";
+import WhatsAppButton from "../components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rahatekom.vercel.app"),
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
