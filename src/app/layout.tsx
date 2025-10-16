@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="data:," />
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
       </head>
       <body className="antialiased">
         <ParticlesBackground />
