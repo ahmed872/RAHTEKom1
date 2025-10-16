@@ -40,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="data:," />
+      </head>
       <body className="antialiased">
         <ParticlesBackground />
         <Navigation />

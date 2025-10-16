@@ -17,12 +17,10 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 rounded-full shadow-2xl transition-all duration-300"
       style={{
-        background: isHovered 
-          ? 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)'
-          : '#25D366',
+        background: 'linear-gradient(135deg, #C9A227 0%, #8B5CF6 100%)',
         boxShadow: isHovered
-          ? '0 10px 40px rgba(37, 211, 102, 0.5)'
-          : '0 4px 20px rgba(37, 211, 102, 0.4)',
+          ? '0 10px 40px rgba(201, 162, 39, 0.6), 0 5px 20px rgba(139, 92, 246, 0.4)'
+          : '0 4px 20px rgba(201, 162, 39, 0.4), 0 2px 10px rgba(139, 92, 246, 0.3)',
       }}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}

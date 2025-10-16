@@ -201,8 +201,8 @@ export default function Contact() {
                   type="submit"
                   className="w-full px-8 py-4 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 text-white flex items-center justify-center gap-3 group"
                   style={{
-                    background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
-                    boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)',
+                    background: 'linear-gradient(135deg, #C9A227 0%, #8B5CF6 100%)',
+                    boxShadow: '0 4px 20px rgba(201, 162, 39, 0.4)',
                   }}
                 >
                   <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
