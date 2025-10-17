@@ -14,9 +14,9 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'luxedrive',
-    title: 'LuxeDrive - Premium Car Rental',
-    description: 'Luxury and performance vehicle rental platform with advanced booking system and real-time availability.',
-    longDescription: 'A sophisticated car rental platform specializing in luxury and performance vehicles. Features include an extensive vehicle catalog with detailed specifications, real-time booking system, deals and coupons section, WhatsApp integration for instant customer support, and a comprehensive admin dashboard for fleet management.',
+    title: 'LuxeDrive - Premium Car Sales',
+    description: 'Luxury and performance vehicle sales platform with advanced booking system and real-time availability.',
+    longDescription: 'A sophisticated car sales platform specializing in luxury and performance vehicles. Features include an extensive vehicle catalog with detailed specifications, real-time booking system, deals and coupons section, WhatsApp integration for instant customer support, and a comprehensive admin dashboard for fleet management.',
     category: 'Web Application',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Booking System', 'WhatsApp Integration'],
     image: '/projects/luxedrive.png',
