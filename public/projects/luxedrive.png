@@ -1,0 +1,92 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="royal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C9A227;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="car-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="url(#royal-gradient)" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="url(#royal-gradient)" stroke-width="1"/>
+  </g>
+  
+  <!-- Stylized luxury car icon -->
+  <g transform="translate(700, 250)">
+    <!-- Car body -->
+    <path d="M 0 0 L 300 0 L 280 60 L 250 80 L 50 80 L 20 60 Z" fill="url(#car-gradient)" opacity="0.9"/>
+    <path d="M 50 80 L 250 80 L 260 100 L 40 100 Z" fill="url(#car-gradient)" opacity="0.7"/>
+    
+    <!-- Wheels -->
+    <circle cx="80" cy="100" r="25" fill="#1a1a1a" stroke="url(#royal-gradient)" stroke-width="3"/>
+    <circle cx="80" cy="100" r="15" fill="url(#royal-gradient)"/>
+    <circle cx="220" cy="100" r="25" fill="#1a1a1a" stroke="url(#royal-gradient)" stroke-width="3"/>
+    <circle cx="220" cy="100" r="15" fill="url(#royal-gradient)"/>
+    
+    <!-- Windows -->
+    <path d="M 70 20 L 140 20 L 130 55 L 80 55 Z" fill="#1a1a1a" opacity="0.5"/>
+    <path d="M 160 20 L 230 20 L 220 55 L 170 55 Z" fill="#1a1a1a" opacity="0.5"/>
+  </g>
+  
+  <!-- Glow effect -->
+  <ellipse cx="850" cy="350" rx="200" ry="80" fill="url(#royal-gradient)" opacity="0.2" filter="blur(40px)"/>
+  
+  <!-- Title -->
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#royal-gradient)">
+    LuxeDrive
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="240" font-family="Arial, sans-serif" font-size="36" fill="#CCCCCC">
+    Premium Car Rental Platform
+  </text>
+  
+  <!-- Features -->
+  <text x="100" y="340" font-family="Arial, sans-serif" font-size="24" fill="#999999">
+    ✓ Luxury Vehicle Catalog
+  </text>
+  <text x="100" y="385" font-family="Arial, sans-serif" font-size="24" fill="#999999">
+    ✓ Real-time Booking System
+  </text>
+  <text x="100" y="430" font-family="Arial, sans-serif" font-size="24" fill="#999999">
+    ✓ WhatsApp Integration
+  </text>
+  
+  <!-- Tech stack -->
+  <g transform="translate(100, 500)">
+    <rect x="0" y="0" width="140" height="40" rx="20" fill="url(#royal-gradient)" opacity="0.2"/>
+    <text x="70" y="27" font-family="Arial, sans-serif" font-size="18" fill="#C9A227" text-anchor="middle">Next.js</text>
+    
+    <rect x="160" y="0" width="120" height="40" rx="20" fill="url(#royal-gradient)" opacity="0.2"/>
+    <text x="220" y="27" font-family="Arial, sans-serif" font-size="18" fill="#C9A227" text-anchor="middle">React</text>
+    
+    <rect x="300" y="0" width="180" height="40" rx="20" fill="url(#royal-gradient)" opacity="0.2"/>
+    <text x="390" y="27" font-family="Arial, sans-serif" font-size="18" fill="#C9A227" text-anchor="middle">Tailwind CSS</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="100" r="5" fill="url(#royal-gradient)" opacity="0.6"/>
+  <circle cx="1100" cy="150" r="3" fill="url(#royal-gradient)" opacity="0.4"/>
+  <circle cx="1070" cy="180" r="4" fill="url(#royal-gradient)" opacity="0.5"/>
+</svg>

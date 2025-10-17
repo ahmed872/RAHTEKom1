@@ -13,6 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'luxedrive',
+    title: 'LuxeDrive - Premium Car Rental',
+    description: 'Luxury and performance vehicle rental platform with advanced booking system and real-time availability.',
+    longDescription: 'A sophisticated car rental platform specializing in luxury and performance vehicles. Features include an extensive vehicle catalog with detailed specifications, real-time booking system, deals and coupons section, WhatsApp integration for instant customer support, and a comprehensive admin dashboard for fleet management.',
+    category: 'Web Application',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'Booking System', 'WhatsApp Integration'],
+    image: '/projects/luxedrive.png',
+    liveUrl: 'https://luxedriveseven.vercel.app/',
+    featured: true,
+    date: '2025-03-15',
+  },
+  {
     id: 'led-lime',
     title: 'LED Lime - Electronic Billboards',
     description: 'Advanced electronic billboard solutions website with modern design and interactive features.',
