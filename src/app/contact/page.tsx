@@ -99,7 +99,8 @@ export default function Contact() {
               <span className="neon-text">Get In Touch</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto px-4">
-              Have a project in mind or just want to say hello? I\u2019d love to hear from you!            </p>
+              Have a project in mind or just want to say hello? I'd love to hear from you!
+            </p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -217,7 +218,8 @@ export default function Contact() {
                     animate={{ opacity: 1 }}
                     className="text-neon-green text-center"
                   >
-                    Message sent successfully! I\u2019ll get back to you soon.                  </motion.p>
+                    Message sent successfully! I'll get back to you soon.
+                  </motion.p>
                 )}
 
                 {false && (
@@ -294,7 +296,7 @@ export default function Contact() {
               <div className="glass-effect p-8 rounded-lg">
                 <h2 className="text-3xl font-bold mb-6 text-neon-lime">Availability</h2>
                 <p className="text-gray-300 mb-4">
-                 I\u2019m currently available for freelance projects and collaborations. Let\u2019s create something amazing together!
+                  I'm currently available for freelance projects and collaborations. Let's create something amazing together!
                 </p>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-neon-green rounded-full animate-pulse"></div>

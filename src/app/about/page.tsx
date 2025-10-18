@@ -96,7 +96,8 @@ export default function About() {
               <span className="neon-text">About Me</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto px-4">
-              Passionate about creating stunning web experiences that push the boundaries of what\u2019s possible            </p>
+              Passionate about creating stunning web experiences that push the boundaries of what's possible
+            </p>
           </motion.div>
 
           {/* Story Section */}
@@ -110,7 +111,7 @@ export default function About() {
                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 neon-text">My Story</h2>
               <div className="space-y-5 text-gray-300 text-base sm:text-lg leading-relaxed">
                 <p>
-                 I\u2019m Rahat Ekom, a creative web developer and designer dedicated to crafting exceptional digital experiences. 
+                  I'm Rahat Ekom, a creative web developer and designer dedicated to crafting exceptional digital experiences. 
                   My journey in web development combines technical expertise with artistic vision to create websites and 
                   applications that are not just functional, but truly memorable.
                 </p>
