@@ -11,13 +11,14 @@ if (typeof window !== 'undefined') {
 
 export default function About() {
   const timelineRef = useRef<HTMLDivElement>(null);
+  const scrollTriggersRef = useRef<ScrollTrigger[]>([]);
 
   useEffect(() => {
     if (timelineRef.current && typeof window !== 'undefined') {
       const items = timelineRef.current.querySelectorAll('.timeline-item');
       
       items.forEach((item, index) => {
-        gsap.fromTo(item, 
+        const trigger = gsap.fromTo(item, 
           {
             opacity: 0,
             x: index % 2 === 0 ? -50 : 50,
@@ -36,11 +37,18 @@ export default function About() {
             ease: 'power2.out',
           }
         );
+        
+        // Store reference to this specific ScrollTrigger
+        if (trigger.scrollTrigger) {
+          scrollTriggersRef.current.push(trigger.scrollTrigger);
+        }
       });
     }
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      // Only kill ScrollTriggers created by this component
+      scrollTriggersRef.current.forEach(trigger => trigger.kill());
+      scrollTriggersRef.current = [];
     };
   }, []);
 
