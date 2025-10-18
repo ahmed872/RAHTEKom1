@@ -87,13 +87,14 @@ export default function Contact() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12 sm:mb-16"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="neon-text">Get In Touch</span>
@@ -103,12 +104,13 @@ export default function Contact() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
               className="glass-effect p-6 sm:p-8 rounded-lg"
             >
               <h2 className="text-2xl sm:text-3xl font-bold mb-6 neon-text">Send Me a Message</h2>
@@ -236,10 +238,11 @@ export default function Contact() {
 
             {/* Contact Info */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="space-y-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="space-y-6 sm:space-y-8"
             >
               {/* Contact Details */}
               <div className="glass-effect p-6 sm:p-8 rounded-lg">
@@ -293,8 +296,8 @@ export default function Contact() {
               </div>
 
               {/* Availability */}
-              <div className="glass-effect p-8 rounded-lg">
-                <h2 className="text-3xl font-bold mb-6 text-neon-lime">Availability</h2>
+              <div className="glass-effect p-6 sm:p-8 rounded-lg">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-neon-lime">Availability</h2>
                 <p className="text-gray-300 mb-4">
                   I&apos;m currently available for freelance projects and collaborations. Let&apos;s create something amazing together!
                 </p>

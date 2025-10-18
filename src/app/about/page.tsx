@@ -84,13 +84,13 @@ export default function About() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="neon-text">About Me</span>
@@ -101,7 +101,7 @@ export default function About() {
           </motion.div>
 
           {/* Story Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16 lg:mb-20">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -180,9 +180,9 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-12 sm:mb-16 lg:mb-20"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center">
               <span className="neon-text">My Journey</span>
             </h2>
             <div ref={timelineRef} className="relative">
@@ -192,7 +192,7 @@ export default function About() {
               {timeline.map((item, index) => (
                 <div
                   key={index}
-                  className={`timeline-item relative mb-12 ${
+                  className={`timeline-item relative mb-8 sm:mb-12 ${
                     index % 2 === 0 ? 'lg:pr-1/2 lg:text-right' : 'lg:pl-1/2 lg:ml-auto'
                   }`}
                 >
@@ -218,10 +218,10 @@ export default function About() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center">
               <span className="neon-text">Technical Stack</span>
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {techStack.map((stack, index) => (
                 <motion.div
                   key={stack.category}
@@ -230,12 +230,12 @@ export default function About() {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="glass-effect p-6 rounded-lg"
+                  className="glass-effect p-4 sm:p-6 rounded-lg"
                 >
-                  <h3 className="text-xl font-bold neon-text mb-4">{stack.category}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold neon-text mb-3 sm:mb-4">{stack.category}</h3>
                   <ul className="space-y-2">
                     {stack.technologies.map((tech) => (
-                      <li key={tech} className="text-gray-300 flex items-center">
+                      <li key={tech} className="text-sm sm:text-base text-gray-300 flex items-center">
                         <span className="w-2 h-2 rounded-full mr-2" style={{ background: 'linear-gradient(135deg, #C9A227 0%, #8B5CF6 100%)' }}></span>
                         {tech}
                       </li>
